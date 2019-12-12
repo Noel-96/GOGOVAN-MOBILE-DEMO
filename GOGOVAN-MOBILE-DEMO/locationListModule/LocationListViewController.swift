@@ -90,7 +90,7 @@ extension LocationListViewController: UITableViewDelegate {
         } else if  pickUpTxtField == self.activeTextField {
             pickUpTxtField.text = "\(cell.locationPrimaryName?.text ?? " ") \(cell.locationSecondaryName?.text ?? " ")"
             return
-        }
+        } 
     }
     
 }
