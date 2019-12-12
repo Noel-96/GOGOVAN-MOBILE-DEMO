@@ -11,7 +11,6 @@ import GoogleMaps
 import GooglePlaces
 
 
-//FIND THE PROPER WAY TO STORE API KEY
 let googleApiKey = "ENTER_YOUR_API_KEY_HERE_WITH_MAPS SDK FOR IOS_AND_PLACES API_ENABLED"
 
 @UIApplicationMain
