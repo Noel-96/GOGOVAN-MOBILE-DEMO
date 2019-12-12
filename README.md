@@ -19,7 +19,7 @@ Xcode version 10.1
 
 ## How to use
 
-Clone the project  <br />
+Clone the project and pod install  <br />
 Go into the app delegate file and input your api key here
 ```
 let googleApiKey = "ENTER_YOUR_API_KEY_HERE_WITH_MAPS SDK FOR IOS_AND_PLACES API_ENABLED"
