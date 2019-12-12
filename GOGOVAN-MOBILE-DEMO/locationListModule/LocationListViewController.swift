@@ -32,7 +32,6 @@ class LocationListViewController: UIViewController, UITextFieldDelegate, UIViewC
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         autoCompleteTableView.tableFooterView = UIView()
         let token = GMSAutocompleteSessionToken.init()
         bindElements(token: token)
@@ -44,6 +43,7 @@ class LocationListViewController: UIViewController, UITextFieldDelegate, UIViewC
     @objc func actionClose(_ tap: UITapGestureRecognizer) {
         presentingViewController?.dismiss(animated: true, completion: nil)
     }
+    
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         self.activeTextField = textField
@@ -67,7 +67,6 @@ class LocationListViewController: UIViewController, UITextFieldDelegate, UIViewC
         }
             .observeOn(MainScheduler.instance)
         
-        
         searchResultsObservable.bind(to: autoCompleteTableView.rx.items(cellIdentifier: "searchCell")){ (row, repo: autoCompleteRepo, cell: AutoCompleteTableViewCell) in
             cell.configureCell(repo: repo)
         }
@@ -83,14 +82,16 @@ extension LocationListViewController: UITableViewDelegate {
         view.endEditing(true)
         guard let cell = tableView.cellForRow(at: indexPath) as? AutoCompleteTableViewCell else { return }
 
-
         if  dropOffTxtField == self.activeTextField {
             dropOffTxtField.text =  "\(cell.locationPrimaryName?.text ?? " ") \(cell.locationSecondaryName?.text ?? " ")"
             return
         } else if  pickUpTxtField == self.activeTextField {
             pickUpTxtField.text = "\(cell.locationPrimaryName?.text ?? " ") \(cell.locationSecondaryName?.text ?? " ")"
             return
-        } 
+        } else {
+            pickUpTxtField.text = "\(cell.locationPrimaryName?.text ?? " ") \(cell.locationSecondaryName?.text ?? " ")"
+            return
+        }
     }
     
 }

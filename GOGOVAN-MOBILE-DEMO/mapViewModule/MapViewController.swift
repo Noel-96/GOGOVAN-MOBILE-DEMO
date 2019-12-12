@@ -21,11 +21,11 @@ class MapViewController: UIViewController, UITextFieldDelegate ,UIViewController
     
     let transition = PopAnimator()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         pickUpTxtField.delegate = self
         dropOffTxtField.delegate = self
-        
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
     }
@@ -44,6 +44,7 @@ class MapViewController: UIViewController, UITextFieldDelegate ,UIViewController
         transition.presenting = true
         return transition
     }
+    
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transition.presenting = false
