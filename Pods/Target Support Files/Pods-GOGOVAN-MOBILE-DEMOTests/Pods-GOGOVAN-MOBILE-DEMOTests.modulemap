@@ -1,0 +1,6 @@
+framework module Pods_GOGOVAN_MOBILE_DEMOTests {
+  umbrella header "Pods-GOGOVAN-MOBILE-DEMOTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

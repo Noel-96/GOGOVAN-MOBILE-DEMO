@@ -3,17 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E111AEE2397B044003DE39C /* PopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E111AED2397B044003DE39C /* PopAnimator.swift */; };
+		4E111AF12397B13F003DE39C /* LocationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E111AF02397B13F003DE39C /* LocationListViewController.swift */; };
+		4E26E0AB239E2FD20087FF62 /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E26E0AA239E2FD20087FF62 /* RoundedCornerTextField.swift */; };
+		4E2B5190239E77AE000349E5 /* AutoCompleteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B518F239E77AE000349E5 /* AutoCompleteTableViewCell.swift */; };
+		4E2B5193239E81FB000349E5 /* autoCompleteRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B5192239E81FB000349E5 /* autoCompleteRepo.swift */; };
+		4E2B5196239E8456000349E5 /* ApiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B5195239E8456000349E5 /* ApiController.swift */; };
+		4E42203D23A0FEC700499EFC /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E42202723A0FEC700499EFC /* IQTextView.swift */; };
+		4E42203E23A0FEC700499EFC /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E42202923A0FEC700499EFC /* IQPreviousNextView.swift */; };
+		4E42203F23A0FEC700499EFC /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E42202A23A0FEC700499EFC /* IQTitleBarButtonItem.swift */; };
+		4E42204023A0FEC700499EFC /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E42202B23A0FEC700499EFC /* IQBarButtonItem.swift */; };
+		4E42204123A0FEC700499EFC /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E42202C23A0FEC700499EFC /* IQToolbar.swift */; };
+		4E42204223A0FEC700499EFC /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E42202D23A0FEC700499EFC /* IQUIView+IQKeyboardToolbar.swift */; };
+		4E42204323A0FEC700499EFC /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E42202E23A0FEC700499EFC /* IQInvocation.swift */; };
+		4E42204423A0FEC700499EFC /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E42203023A0FEC700499EFC /* IQKeyboardManagerConstantsInternal.swift */; };
+		4E42204523A0FEC700499EFC /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E42203123A0FEC700499EFC /* IQKeyboardManagerConstants.swift */; };
+		4E42204623A0FEC700499EFC /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4E42203323A0FEC700499EFC /* IQKeyboardManager.bundle */; };
+		4E42204723A0FEC700499EFC /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E42203423A0FEC700499EFC /* IQKeyboardReturnKeyHandler.swift */; };
+		4E42204823A0FEC700499EFC /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E42203523A0FEC700499EFC /* IQKeyboardManager.swift */; };
+		4E42204923A0FEC700499EFC /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E42203823A0FEC700499EFC /* IQUIScrollView+Additions.swift */; };
+		4E42204A23A0FEC700499EFC /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E42203923A0FEC700499EFC /* IQUIViewController+Additions.swift */; };
+		4E42204B23A0FEC700499EFC /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E42203A23A0FEC700499EFC /* IQUITextFieldView+Additions.swift */; };
+		4E42204C23A0FEC700499EFC /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E42203B23A0FEC700499EFC /* IQUIView+Hierarchy.swift */; };
+		4E42204D23A0FEC700499EFC /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E42203C23A0FEC700499EFC /* IQNSArray+Sort.swift */; };
 		4E8E7FDF239668CD009D2D37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E7FDE239668CD009D2D37 /* AppDelegate.swift */; };
-		4E8E7FE1239668CD009D2D37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E7FE0239668CD009D2D37 /* ViewController.swift */; };
+		4E8E7FE1239668CD009D2D37 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E7FE0239668CD009D2D37 /* MapViewController.swift */; };
 		4E8E7FE4239668CD009D2D37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8E7FE2239668CD009D2D37 /* Main.storyboard */; };
 		4E8E7FE6239668CF009D2D37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E8E7FE5239668CF009D2D37 /* Assets.xcassets */; };
 		4E8E7FE9239668D0009D2D37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8E7FE7239668CF009D2D37 /* LaunchScreen.storyboard */; };
 		4E8E7FF4239668D0009D2D37 /* GOGOVAN_MOBILE_DEMOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E7FF3239668D0009D2D37 /* GOGOVAN_MOBILE_DEMOTests.swift */; };
 		4E8E7FFF239668D0009D2D37 /* GOGOVAN_MOBILE_DEMOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E7FFE239668D0009D2D37 /* GOGOVAN_MOBILE_DEMOUITests.swift */; };
+		4F72D08AEC8503530EE156B8 /* Pods_GOGOVAN_MOBILE_DEMOTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB01B502E578F797882B3D1D /* Pods_GOGOVAN_MOBILE_DEMOTests.framework */; };
+		7C25E5CAAFEABA3B86AC75BD /* Pods_GOGOVAN_MOBILE_DEMOUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6E1ED551B56FBB030729FC /* Pods_GOGOVAN_MOBILE_DEMOUITests.framework */; };
+		8667FA99D2867396D2EC3B04 /* Pods_GOGOVAN_MOBILE_DEMO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE03C188AF7D621AE46D3EF /* Pods_GOGOVAN_MOBILE_DEMO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +60,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00BE83BDC6E7451B0CD2F458 /* Pods-GOGOVAN-MOBILE-DEMOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GOGOVAN-MOBILE-DEMOTests.debug.xcconfig"; path = "Target Support Files/Pods-GOGOVAN-MOBILE-DEMOTests/Pods-GOGOVAN-MOBILE-DEMOTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3BE03C188AF7D621AE46D3EF /* Pods_GOGOVAN_MOBILE_DEMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GOGOVAN_MOBILE_DEMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E111AED2397B044003DE39C /* PopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimator.swift; sourceTree = "<group>"; };
+		4E111AF02397B13F003DE39C /* LocationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewController.swift; sourceTree = "<group>"; };
+		4E26E0AA239E2FD20087FF62 /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
+		4E2B518F239E77AE000349E5 /* AutoCompleteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompleteTableViewCell.swift; sourceTree = "<group>"; };
+		4E2B5192239E81FB000349E5 /* autoCompleteRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = autoCompleteRepo.swift; sourceTree = "<group>"; };
+		4E2B5195239E8456000349E5 /* ApiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiController.swift; sourceTree = "<group>"; };
+		4E42202723A0FEC700499EFC /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		4E42202923A0FEC700499EFC /* IQPreviousNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQPreviousNextView.swift; sourceTree = "<group>"; };
+		4E42202A23A0FEC700499EFC /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		4E42202B23A0FEC700499EFC /* IQBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		4E42202C23A0FEC700499EFC /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		4E42202D23A0FEC700499EFC /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		4E42202E23A0FEC700499EFC /* IQInvocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQInvocation.swift; sourceTree = "<group>"; };
+		4E42203023A0FEC700499EFC /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		4E42203123A0FEC700499EFC /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		4E42203323A0FEC700499EFC /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		4E42203423A0FEC700499EFC /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		4E42203523A0FEC700499EFC /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		4E42203623A0FEC700499EFC /* IQKeyboardManagerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerSwift.h; sourceTree = "<group>"; };
+		4E42203823A0FEC700499EFC /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		4E42203923A0FEC700499EFC /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		4E42203A23A0FEC700499EFC /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		4E42203B23A0FEC700499EFC /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		4E42203C23A0FEC700499EFC /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
 		4E8E7FDB239668CD009D2D37 /* GOGOVAN-MOBILE-DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GOGOVAN-MOBILE-DEMO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8E7FDE239668CD009D2D37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4E8E7FE0239668CD009D2D37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E8E7FE0239668CD009D2D37 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4E8E7FE3239668CD009D2D37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E8E7FE5239668CF009D2D37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E8E7FE8239668D0009D2D37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +99,13 @@
 		4E8E7FFA239668D0009D2D37 /* GOGOVAN-MOBILE-DEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GOGOVAN-MOBILE-DEMOUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8E7FFE239668D0009D2D37 /* GOGOVAN_MOBILE_DEMOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOGOVAN_MOBILE_DEMOUITests.swift; sourceTree = "<group>"; };
 		4E8E8000239668D0009D2D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B29ADF38C711F1891DA6BFC /* Pods-GOGOVAN-MOBILE-DEMOUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GOGOVAN-MOBILE-DEMOUITests.debug.xcconfig"; path = "Target Support Files/Pods-GOGOVAN-MOBILE-DEMOUITests/Pods-GOGOVAN-MOBILE-DEMOUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B6E1ED551B56FBB030729FC /* Pods_GOGOVAN_MOBILE_DEMOUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GOGOVAN_MOBILE_DEMOUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B758BA96F986E7D5BD82907D /* Pods-GOGOVAN-MOBILE-DEMOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GOGOVAN-MOBILE-DEMOUITests.release.xcconfig"; path = "Target Support Files/Pods-GOGOVAN-MOBILE-DEMOUITests/Pods-GOGOVAN-MOBILE-DEMOUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BB01B502E578F797882B3D1D /* Pods_GOGOVAN_MOBILE_DEMOTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GOGOVAN_MOBILE_DEMOTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE23D0326D2A7F9C850EB185 /* Pods-GOGOVAN-MOBILE-DEMOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GOGOVAN-MOBILE-DEMOTests.release.xcconfig"; path = "Target Support Files/Pods-GOGOVAN-MOBILE-DEMOTests/Pods-GOGOVAN-MOBILE-DEMOTests.release.xcconfig"; sourceTree = "<group>"; };
+		DCA6CF574F9859A3247323F2 /* Pods-GOGOVAN-MOBILE-DEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GOGOVAN-MOBILE-DEMO.release.xcconfig"; path = "Target Support Files/Pods-GOGOVAN-MOBILE-DEMO/Pods-GOGOVAN-MOBILE-DEMO.release.xcconfig"; sourceTree = "<group>"; };
+		DDAF355FEC0D4034A02F1E86 /* Pods-GOGOVAN-MOBILE-DEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GOGOVAN-MOBILE-DEMO.debug.xcconfig"; path = "Target Support Files/Pods-GOGOVAN-MOBILE-DEMO/Pods-GOGOVAN-MOBILE-DEMO.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8667FA99D2867396D2EC3B04 /* Pods_GOGOVAN_MOBILE_DEMO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F72D08AEC8503530EE156B8 /* Pods_GOGOVAN_MOBILE_DEMOTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +129,155 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C25E5CAAFEABA3B86AC75BD /* Pods_GOGOVAN_MOBILE_DEMOUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09B821E2E3AB0BAFC26EB39F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDAF355FEC0D4034A02F1E86 /* Pods-GOGOVAN-MOBILE-DEMO.debug.xcconfig */,
+				DCA6CF574F9859A3247323F2 /* Pods-GOGOVAN-MOBILE-DEMO.release.xcconfig */,
+				00BE83BDC6E7451B0CD2F458 /* Pods-GOGOVAN-MOBILE-DEMOTests.debug.xcconfig */,
+				CE23D0326D2A7F9C850EB185 /* Pods-GOGOVAN-MOBILE-DEMOTests.release.xcconfig */,
+				5B29ADF38C711F1891DA6BFC /* Pods-GOGOVAN-MOBILE-DEMOUITests.debug.xcconfig */,
+				B758BA96F986E7D5BD82907D /* Pods-GOGOVAN-MOBILE-DEMOUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4E094D1D239698B600C75A23 /* mapViewModule */ = {
+			isa = PBXGroup;
+			children = (
+				4E8E7FE0239668CD009D2D37 /* MapViewController.swift */,
+			);
+			path = mapViewModule;
+			sourceTree = "<group>";
+		};
+		4E111AEC2397B032003DE39C /* animations */ = {
+			isa = PBXGroup;
+			children = (
+				4E111AED2397B044003DE39C /* PopAnimator.swift */,
+			);
+			path = animations;
+			sourceTree = "<group>";
+		};
+		4E111AEF2397B11F003DE39C /* locationListModule */ = {
+			isa = PBXGroup;
+			children = (
+				4E111AF02397B13F003DE39C /* LocationListViewController.swift */,
+			);
+			path = locationListModule;
+			sourceTree = "<group>";
+		};
+		4E26E0A9239E2CA80087FF62 /* customViews */ = {
+			isa = PBXGroup;
+			children = (
+				4E26E0AA239E2FD20087FF62 /* RoundedCornerTextField.swift */,
+			);
+			path = customViews;
+			sourceTree = "<group>";
+		};
+		4E2B518E239E778B000349E5 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				4E2B518F239E77AE000349E5 /* AutoCompleteTableViewCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		4E2B5191239E81AD000349E5 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				4E2B5192239E81FB000349E5 /* autoCompleteRepo.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		4E2B5194239E8386000349E5 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				4E2B5195239E8456000349E5 /* ApiController.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		4E42202423A0FA8000499EFC /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				4E42202523A0FEC700499EFC /* IQKeyboardManagerSwift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		4E42202523A0FEC700499EFC /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				4E42202623A0FEC700499EFC /* IQTextView */,
+				4E42202823A0FEC700499EFC /* IQToolbar */,
+				4E42202F23A0FEC700499EFC /* Constants */,
+				4E42203223A0FEC700499EFC /* Resources */,
+				4E42203423A0FEC700499EFC /* IQKeyboardReturnKeyHandler.swift */,
+				4E42203523A0FEC700499EFC /* IQKeyboardManager.swift */,
+				4E42203623A0FEC700499EFC /* IQKeyboardManagerSwift.h */,
+				4E42203723A0FEC700499EFC /* Categories */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		4E42202623A0FEC700499EFC /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				4E42202723A0FEC700499EFC /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		4E42202823A0FEC700499EFC /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				4E42202923A0FEC700499EFC /* IQPreviousNextView.swift */,
+				4E42202A23A0FEC700499EFC /* IQTitleBarButtonItem.swift */,
+				4E42202B23A0FEC700499EFC /* IQBarButtonItem.swift */,
+				4E42202C23A0FEC700499EFC /* IQToolbar.swift */,
+				4E42202D23A0FEC700499EFC /* IQUIView+IQKeyboardToolbar.swift */,
+				4E42202E23A0FEC700499EFC /* IQInvocation.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		4E42202F23A0FEC700499EFC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4E42203023A0FEC700499EFC /* IQKeyboardManagerConstantsInternal.swift */,
+				4E42203123A0FEC700499EFC /* IQKeyboardManagerConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4E42203223A0FEC700499EFC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4E42203323A0FEC700499EFC /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4E42203723A0FEC700499EFC /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4E42203823A0FEC700499EFC /* IQUIScrollView+Additions.swift */,
+				4E42203923A0FEC700499EFC /* IQUIViewController+Additions.swift */,
+				4E42203A23A0FEC700499EFC /* IQUITextFieldView+Additions.swift */,
+				4E42203B23A0FEC700499EFC /* IQUIView+Hierarchy.swift */,
+				4E42203C23A0FEC700499EFC /* IQNSArray+Sort.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		4E8E7FD2239668CD009D2D37 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +285,8 @@
 				4E8E7FF2239668D0009D2D37 /* GOGOVAN-MOBILE-DEMOTests */,
 				4E8E7FFD239668D0009D2D37 /* GOGOVAN-MOBILE-DEMOUITests */,
 				4E8E7FDC239668CD009D2D37 /* Products */,
+				09B821E2E3AB0BAFC26EB39F /* Pods */,
+				D66E04B2D8E3598143DA0E3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +303,15 @@
 		4E8E7FDD239668CD009D2D37 /* GOGOVAN-MOBILE-DEMO */ = {
 			isa = PBXGroup;
 			children = (
+				4E42202423A0FA8000499EFC /* utils */,
+				4E2B5194239E8386000349E5 /* network */,
+				4E2B5191239E81AD000349E5 /* entity */,
+				4E2B518E239E778B000349E5 /* cells */,
+				4E26E0A9239E2CA80087FF62 /* customViews */,
+				4E111AEC2397B032003DE39C /* animations */,
+				4E111AEF2397B11F003DE39C /* locationListModule */,
+				4E094D1D239698B600C75A23 /* mapViewModule */,
 				4E8E7FDE239668CD009D2D37 /* AppDelegate.swift */,
-				4E8E7FE0239668CD009D2D37 /* ViewController.swift */,
 				4E8E7FE2239668CD009D2D37 /* Main.storyboard */,
 				4E8E7FE5239668CF009D2D37 /* Assets.xcassets */,
 				4E8E7FE7239668CF009D2D37 /* LaunchScreen.storyboard */,
@@ -125,6 +338,16 @@
 			path = "GOGOVAN-MOBILE-DEMOUITests";
 			sourceTree = "<group>";
 		};
+		D66E04B2D8E3598143DA0E3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BE03C188AF7D621AE46D3EF /* Pods_GOGOVAN_MOBILE_DEMO.framework */,
+				BB01B502E578F797882B3D1D /* Pods_GOGOVAN_MOBILE_DEMOTests.framework */,
+				5B6E1ED551B56FBB030729FC /* Pods_GOGOVAN_MOBILE_DEMOUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +355,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E8E8003239668D0009D2D37 /* Build configuration list for PBXNativeTarget "GOGOVAN-MOBILE-DEMO" */;
 			buildPhases = (
+				A0DD212FBC6CA0CCA7931600 /* [CP] Check Pods Manifest.lock */,
 				4E8E7FD7239668CD009D2D37 /* Sources */,
 				4E8E7FD8239668CD009D2D37 /* Frameworks */,
 				4E8E7FD9239668CD009D2D37 /* Resources */,
+				B9CB259815C55A893CBFD5E6 /* [CP] Embed Pods Frameworks */,
+				C235F5ED813635A1CCC271C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +375,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E8E8006239668D0009D2D37 /* Build configuration list for PBXNativeTarget "GOGOVAN-MOBILE-DEMOTests" */;
 			buildPhases = (
+				D491C23B824739B28365D122 /* [CP] Check Pods Manifest.lock */,
 				4E8E7FEB239668D0009D2D37 /* Sources */,
 				4E8E7FEC239668D0009D2D37 /* Frameworks */,
 				4E8E7FED239668D0009D2D37 /* Resources */,
@@ -167,6 +394,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E8E8009239668D0009D2D37 /* Build configuration list for PBXNativeTarget "GOGOVAN-MOBILE-DEMOUITests" */;
 			buildPhases = (
+				A4ACD73D52A6712BE0B51F2F /* [CP] Check Pods Manifest.lock */,
 				4E8E7FF6239668D0009D2D37 /* Sources */,
 				4E8E7FF7239668D0009D2D37 /* Frameworks */,
 				4E8E7FF8239668D0009D2D37 /* Resources */,
@@ -231,6 +459,7 @@
 			files = (
 				4E8E7FE9239668D0009D2D37 /* LaunchScreen.storyboard in Resources */,
 				4E8E7FE6239668CF009D2D37 /* Assets.xcassets in Resources */,
+				4E42204623A0FEC700499EFC /* IQKeyboardManager.bundle in Resources */,
 				4E8E7FE4239668CD009D2D37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,13 +480,138 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A0DD212FBC6CA0CCA7931600 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GOGOVAN-MOBILE-DEMO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4ACD73D52A6712BE0B51F2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GOGOVAN-MOBILE-DEMOUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9CB259815C55A893CBFD5E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GOGOVAN-MOBILE-DEMO/Pods-GOGOVAN-MOBILE-DEMO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GOGOVAN-MOBILE-DEMO/Pods-GOGOVAN-MOBILE-DEMO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GOGOVAN-MOBILE-DEMO/Pods-GOGOVAN-MOBILE-DEMO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C235F5ED813635A1CCC271C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GOGOVAN-MOBILE-DEMO/Pods-GOGOVAN-MOBILE-DEMO-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GOGOVAN-MOBILE-DEMO/Pods-GOGOVAN-MOBILE-DEMO-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GOGOVAN-MOBILE-DEMO/Pods-GOGOVAN-MOBILE-DEMO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D491C23B824739B28365D122 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GOGOVAN-MOBILE-DEMOTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4E8E7FD7239668CD009D2D37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E8E7FE1239668CD009D2D37 /* ViewController.swift in Sources */,
+				4E8E7FE1239668CD009D2D37 /* MapViewController.swift in Sources */,
+				4E42204D23A0FEC700499EFC /* IQNSArray+Sort.swift in Sources */,
+				4E42204323A0FEC700499EFC /* IQInvocation.swift in Sources */,
+				4E42204123A0FEC700499EFC /* IQToolbar.swift in Sources */,
+				4E2B5190239E77AE000349E5 /* AutoCompleteTableViewCell.swift in Sources */,
+				4E42204223A0FEC700499EFC /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				4E42204923A0FEC700499EFC /* IQUIScrollView+Additions.swift in Sources */,
+				4E111AEE2397B044003DE39C /* PopAnimator.swift in Sources */,
+				4E42204B23A0FEC700499EFC /* IQUITextFieldView+Additions.swift in Sources */,
+				4E111AF12397B13F003DE39C /* LocationListViewController.swift in Sources */,
+				4E2B5196239E8456000349E5 /* ApiController.swift in Sources */,
+				4E42203D23A0FEC700499EFC /* IQTextView.swift in Sources */,
+				4E42203E23A0FEC700499EFC /* IQPreviousNextView.swift in Sources */,
+				4E42204523A0FEC700499EFC /* IQKeyboardManagerConstants.swift in Sources */,
+				4E2B5193239E81FB000349E5 /* autoCompleteRepo.swift in Sources */,
+				4E42204A23A0FEC700499EFC /* IQUIViewController+Additions.swift in Sources */,
+				4E42204C23A0FEC700499EFC /* IQUIView+Hierarchy.swift in Sources */,
+				4E42204023A0FEC700499EFC /* IQBarButtonItem.swift in Sources */,
+				4E42203F23A0FEC700499EFC /* IQTitleBarButtonItem.swift in Sources */,
+				4E26E0AB239E2FD20087FF62 /* RoundedCornerTextField.swift in Sources */,
+				4E42204823A0FEC700499EFC /* IQKeyboardManager.swift in Sources */,
+				4E42204723A0FEC700499EFC /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				4E8E7FDF239668CD009D2D37 /* AppDelegate.swift in Sources */,
+				4E42204423A0FEC700499EFC /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +784,7 @@
 		};
 		4E8E8004239668D0009D2D37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDAF355FEC0D4034A02F1E86 /* Pods-GOGOVAN-MOBILE-DEMO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +802,7 @@
 		};
 		4E8E8005239668D0009D2D37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCA6CF574F9859A3247323F2 /* Pods-GOGOVAN-MOBILE-DEMO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +820,7 @@
 		};
 		4E8E8007239668D0009D2D37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00BE83BDC6E7451B0CD2F458 /* Pods-GOGOVAN-MOBILE-DEMOTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +841,7 @@
 		};
 		4E8E8008239668D0009D2D37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE23D0326D2A7F9C850EB185 /* Pods-GOGOVAN-MOBILE-DEMOTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +862,7 @@
 		};
 		4E8E800A239668D0009D2D37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B29ADF38C711F1891DA6BFC /* Pods-GOGOVAN-MOBILE-DEMOUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +882,7 @@
 		};
 		4E8E800B239668D0009D2D37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B758BA96F986E7D5BD82907D /* Pods-GOGOVAN-MOBILE-DEMOUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

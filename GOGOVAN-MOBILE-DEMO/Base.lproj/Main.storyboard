@@ -1,24 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="GOGOVAN_MOBILE_DEMO" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tKX-iX-lsT" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="70" width="375" height="507"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LkC-MR-1g1">
+                                <rect key="frame" x="0.0" y="577" width="375" height="90"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pointerIcon" translatesAutoresizingMaskIntoConstraints="NO" id="OYI-IV-5zT">
+                                        <rect key="frame" x="20" y="15" width="30" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="8Td-Ad-Y6Q"/>
+                                            <constraint firstAttribute="height" constant="60" id="jqP-dG-YvE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select pick-up point" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QJ9-Hw-ybO" customClass="RoundedCornerTextField" customModule="GOGOVAN_MOBILE_DEMO" customModuleProvider="target">
+                                        <rect key="frame" x="66" y="15" width="293" height="30"/>
+                                        <color key="backgroundColor" red="0.87838226556777954" green="0.87846356630325317" blue="0.87832814455032349" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select drop-off point" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6nQ-JD-OKO" customClass="RoundedCornerTextField" customModule="GOGOVAN_MOBILE_DEMO" customModuleProvider="target">
+                                        <rect key="frame" x="66" y="53" width="293" height="30"/>
+                                        <color key="backgroundColor" red="0.87450980392156863" green="0.94509803921568625" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="OYI-IV-5zT" firstAttribute="centerY" secondItem="LkC-MR-1g1" secondAttribute="centerY" id="FQY-yh-NdY"/>
+                                    <constraint firstItem="6nQ-JD-OKO" firstAttribute="leading" secondItem="OYI-IV-5zT" secondAttribute="trailing" constant="16" id="Hmq-gd-Uj0"/>
+                                    <constraint firstItem="6nQ-JD-OKO" firstAttribute="top" secondItem="QJ9-Hw-ybO" secondAttribute="bottom" constant="8" id="Yyp-xy-Ojw"/>
+                                    <constraint firstItem="QJ9-Hw-ybO" firstAttribute="top" secondItem="OYI-IV-5zT" secondAttribute="top" id="ZV5-pG-AED"/>
+                                    <constraint firstItem="OYI-IV-5zT" firstAttribute="leading" secondItem="LkC-MR-1g1" secondAttribute="leading" constant="20" id="azG-IV-eAb"/>
+                                    <constraint firstItem="QJ9-Hw-ybO" firstAttribute="leading" secondItem="OYI-IV-5zT" secondAttribute="trailing" constant="16" id="jqx-5M-Sqy"/>
+                                    <constraint firstAttribute="trailing" secondItem="6nQ-JD-OKO" secondAttribute="trailing" constant="16" id="kJL-fV-W6B"/>
+                                    <constraint firstAttribute="trailing" secondItem="QJ9-Hw-ybO" secondAttribute="trailing" constant="16" id="xeD-dM-ycB"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gogovan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeO-y4-ey2">
+                                <rect key="frame" x="152" y="32" width="71" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H64-Ta-c35">
+                                <rect key="frame" x="25" y="32" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="cCo-CJ-9bH"/>
+                                    <constraint firstAttribute="height" constant="30" id="oF2-k7-xL3"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="snackbar"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IeO-y4-ey2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0bP-px-UVQ"/>
+                            <constraint firstItem="H64-Ta-c35" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="1MV-CR-veo"/>
+                            <constraint firstItem="LkC-MR-1g1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3MT-hN-GC6"/>
+                            <constraint firstItem="LkC-MR-1g1" firstAttribute="top" secondItem="tKX-iX-lsT" secondAttribute="bottom" id="3pN-W7-gAm"/>
+                            <constraint firstItem="tKX-iX-lsT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="7eI-SM-7WK"/>
+                            <constraint firstItem="tKX-iX-lsT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Fy6-JX-g4P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tKX-iX-lsT" secondAttribute="bottom" constant="90" id="KRb-N9-ltk"/>
+                            <constraint firstItem="IeO-y4-ey2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="PEk-02-IBm"/>
+                            <constraint firstItem="LkC-MR-1g1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="REh-3F-IT4"/>
+                            <constraint firstItem="tKX-iX-lsT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vsh-c4-seD"/>
+                            <constraint firstItem="LkC-MR-1g1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jDd-jz-nqK"/>
+                            <constraint firstItem="H64-Ta-c35" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="xpV-fI-U8h"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomUiView" destination="LkC-MR-1g1" id="JGl-gc-oRg"/>
+                        <outlet property="dropOffTxtField" destination="6nQ-JD-OKO" id="zr8-fm-KNx"/>
+                        <outlet property="mapView" destination="tKX-iX-lsT" id="Ugq-39-ojP"/>
+                        <outlet property="pickUpTxtField" destination="QJ9-Hw-ybO" id="Jon-vo-6mH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-76" y="133.5832083958021"/>
+        </scene>
+        <!--Location List View Controller-->
+        <scene sceneID="Uja-Dc-CJ0">
+            <objects>
+                <viewController storyboardIdentifier="LocationListViewController" id="Itc-CE-ymM" customClass="LocationListViewController" customModule="GOGOVAN_MOBILE_DEMO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FMi-qv-TkI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pointerIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XjA-kk-Ps3">
+                                <rect key="frame" x="16" y="78" width="30" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="6iE-En-aox"/>
+                                    <constraint firstAttribute="width" constant="30" id="IHK-pR-cBD"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select pick-up point" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5lg-gU-Urn" customClass="RoundedCornerTextField" customModule="GOGOVAN_MOBILE_DEMO" customModuleProvider="target">
+                                <rect key="frame" x="54" y="78" width="301" height="30"/>
+                                <color key="backgroundColor" red="0.85940396785736084" green="0.94741767644882202" blue="0.96778589487075806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WeI-1I-5rZ">
+                                <rect key="frame" x="0.0" y="166" width="375" height="501"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchCell" rowHeight="73" id="ElN-jw-lIG" customClass="AutoCompleteTableViewCell" customModule="GOGOVAN_MOBILE_DEMO" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="73"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ElN-jw-lIG" id="8fV-xg-g0M">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="72.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generic place somewhere in the world" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqq-ea-J0X">
+                                                    <rect key="frame" x="50" y="8" width="317" height="24"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                    <color key="textColor" red="0.30196078431372547" green="0.3411764705882353" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generic address somewhere in the world" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAK-LJ-e53">
+                                                    <rect key="frame" x="50" y="36" width="302" height="18"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
+                                                    <color key="textColor" red="0.5725490196078431" green="0.59999999999999998" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ewg-0B-NNl">
+                                                    <rect key="frame" x="18" y="21.5" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="AXc-xT-tMu"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="iAK-LJ-e53" secondAttribute="bottom" constant="8" id="0dJ-XR-Leh"/>
+                                                <constraint firstAttribute="trailing" secondItem="gqq-ea-J0X" secondAttribute="trailing" constant="8" id="1hE-du-biE"/>
+                                                <constraint firstItem="gqq-ea-J0X" firstAttribute="leading" secondItem="ewg-0B-NNl" secondAttribute="trailing" constant="2" id="GtB-29-T4D"/>
+                                                <constraint firstItem="iAK-LJ-e53" firstAttribute="leading" secondItem="gqq-ea-J0X" secondAttribute="leading" id="K98-yc-rD9"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="iAK-LJ-e53" secondAttribute="trailing" constant="8" id="QB4-Vg-fOi"/>
+                                                <constraint firstItem="iAK-LJ-e53" firstAttribute="top" secondItem="gqq-ea-J0X" secondAttribute="bottom" constant="4" id="Wfs-Cg-ehm"/>
+                                                <constraint firstItem="gqq-ea-J0X" firstAttribute="top" secondItem="8fV-xg-g0M" secondAttribute="top" constant="8" id="gdl-2t-CcT"/>
+                                                <constraint firstItem="ewg-0B-NNl" firstAttribute="leading" secondItem="8fV-xg-g0M" secondAttribute="leadingMargin" constant="3" id="i5G-su-uco"/>
+                                                <constraint firstItem="gqq-ea-J0X" firstAttribute="leading" secondItem="8fV-xg-g0M" secondAttribute="leading" constant="50" id="t03-f8-kB8"/>
+                                                <constraint firstItem="ewg-0B-NNl" firstAttribute="centerY" secondItem="8fV-xg-g0M" secondAttribute="centerY" id="yLe-Uf-6dA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="locationImage" destination="ewg-0B-NNl" id="FNb-ed-OxR"/>
+                                            <outlet property="locationPrimaryName" destination="gqq-ea-J0X" id="4pS-8r-nRE"/>
+                                            <outlet property="locationSecondaryName" destination="iAK-LJ-e53" id="qvk-Rc-IlS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select drop-off point" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ovc-34-xiL" customClass="RoundedCornerTextField" customModule="GOGOVAN_MOBILE_DEMO" customModuleProvider="target">
+                                <rect key="frame" x="54" y="116" width="301" height="30"/>
+                                <color key="backgroundColor" red="0.87838226556777954" green="0.87846356630325317" blue="0.87832814455032349" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backbutton" translatesAutoresizingMaskIntoConstraints="NO" id="DJK-iX-auj">
+                                <rect key="frame" x="16" y="28" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="32M-UN-aaS"/>
+                                    <constraint firstAttribute="height" constant="30" id="O2Y-Zb-PaA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WeI-1I-5rZ" firstAttribute="top" secondItem="Ovc-34-xiL" secondAttribute="bottom" constant="20" id="5zR-BT-Iph"/>
+                            <constraint firstItem="Ovc-34-xiL" firstAttribute="top" secondItem="5lg-gU-Urn" secondAttribute="bottom" constant="8" id="AP6-Ff-3VY"/>
+                            <constraint firstItem="WeI-1I-5rZ" firstAttribute="leading" secondItem="BxY-re-lxY" secondAttribute="leading" id="CEZ-89-wOU"/>
+                            <constraint firstItem="5lg-gU-Urn" firstAttribute="top" secondItem="XjA-kk-Ps3" secondAttribute="top" id="Hkc-fS-ueb"/>
+                            <constraint firstItem="XjA-kk-Ps3" firstAttribute="top" secondItem="DJK-iX-auj" secondAttribute="bottom" constant="20" id="Nvw-Q6-FEO"/>
+                            <constraint firstItem="BxY-re-lxY" firstAttribute="trailing" secondItem="5lg-gU-Urn" secondAttribute="trailing" constant="20" id="Q6v-eP-jZl"/>
+                            <constraint firstItem="WeI-1I-5rZ" firstAttribute="bottom" secondItem="BxY-re-lxY" secondAttribute="bottom" id="Rs3-Pc-dhI"/>
+                            <constraint firstItem="DJK-iX-auj" firstAttribute="top" secondItem="BxY-re-lxY" secondAttribute="top" constant="8" id="SUA-aZ-xSn"/>
+                            <constraint firstItem="DJK-iX-auj" firstAttribute="leading" secondItem="BxY-re-lxY" secondAttribute="leading" constant="16" id="TMA-0n-dSE"/>
+                            <constraint firstItem="WeI-1I-5rZ" firstAttribute="trailing" secondItem="BxY-re-lxY" secondAttribute="trailing" id="TfH-eP-Pye"/>
+                            <constraint firstItem="Ovc-34-xiL" firstAttribute="leading" secondItem="XjA-kk-Ps3" secondAttribute="trailing" constant="8" id="XQc-VT-HER"/>
+                            <constraint firstItem="BxY-re-lxY" firstAttribute="trailing" secondItem="Ovc-34-xiL" secondAttribute="trailing" constant="20" id="kfq-ds-6V8"/>
+                            <constraint firstItem="5lg-gU-Urn" firstAttribute="leading" secondItem="XjA-kk-Ps3" secondAttribute="trailing" constant="8" id="ncg-z1-ucx"/>
+                            <constraint firstItem="XjA-kk-Ps3" firstAttribute="leading" secondItem="BxY-re-lxY" secondAttribute="leading" constant="16" id="rv7-bh-xkS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BxY-re-lxY"/>
+                    </view>
+                    <connections>
+                        <outlet property="autoCompleteTableView" destination="WeI-1I-5rZ" id="Wcx-bN-fco"/>
+                        <outlet property="backButtonImageVieew" destination="DJK-iX-auj" id="Dx8-Sh-Zsi"/>
+                        <outlet property="dropOffTxtField" destination="Ovc-34-xiL" id="Ncq-A6-nR3"/>
+                        <outlet property="pickUpTxtField" destination="5lg-gU-Urn" id="JID-mZ-5mp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XvS-xG-DZN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="629.60000000000002" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backbutton" width="29" height="29"/>
+        <image name="locationsIcon" width="30" height="30"/>
+        <image name="pointerIcon" width="30" height="60"/>
+        <image name="snackbar" width="30" height="30"/>
+    </resources>
 </document>
